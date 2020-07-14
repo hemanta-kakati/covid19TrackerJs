@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China's Corona Virus Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <style>
+        .loader {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: 3px solid transparent;
+            border-top-color: #f56;
+            border-left-color: #f56;
+            border-radius: 50%;
+            animation: loader .75s 10 ease forwards;
+            animation-iteration-count: infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes loader {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .circle-wrapper {
+            width: 100%;
+            height: 258px;
+            border-radius: 50%;
+            font-size: 1.6rem;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">China's Corona Virus Tracker</h1>
+        <form id="searchDataForm">
+            <div class="row">
+                <!-- <div class="col"></div> -->
+                <div class="col-sm mx-auto">
+                    <select name="searchBy" id="searchBy" class="form-control">
+                        <option value="noselect">Select Search By (not selected)</option>
+                        <option value="searchByCountry">Search By Country</option>
+                        <!-- <option value="searchByCountryAndDate">Search By Country And Date</option>
+                        <option value="searchByDate">Search By Date</option> -->
+                    </select>
+                </div>
+                <div class="col-sm" id="searchFetchedContainer">
+                    <select id="searchFetched" class="form-control">
+                    <!-- <option value="in">India</option>
+                    <option value="gr">Germany</option> -->
+                </select> </div>
+                <div class="col-sm"><input type="submit" class="btn btn-info form-control" value="Search"></div>
+
+            </div>
+        </form>
+
+        <div id="outputResults" class="mt-4">
+            <div class="row">
+                <!-- <form class="mb-4" id="#country-sort-form">
+                    <div class="form-row">
+                        <div class="col-sm-4 ml-auto">
+                            <select id="sort-by" class="form-control">
+                                <option value="noselect">Sort By</option>
+                                <option value="today">Today</option>
+                            </select>
+                        </div>
+                    </div>
+                </form> -->
+
+                <!-- Country sort -->
+
+                <!-- <div class="col-sm-6 mx-auto mb-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Last updated: $last_update
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">New Cases</h5>
+                            <p class="card-text">Total <span class="font-weight-bold text-primary">$new_cases</span> new active cases during last 24hrs</p>
+                            <h5 class="card-title text-danger">New Deaths</h5>
+                            <p class="card-text">Total <span class="font-weight-bold text-danger">$new_deaths</span> reportedly died during last 24hrs</p>
+                            <h5 class="card-title text-success">New Recovered</h5>
+                            <p class="card-text">Total <span class="font-weight-bold text-success">$new_recovered</span> new patients recovered during last 24hrs</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Daily Tally
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center text-primary mb-4">Last Updated: 2020-04-24T06:30:32</h4>
+                <div class="col-3">
+                    <div class="circle-wrapper bg-warning d-flex justify-content-center align-items-center">
+                        Country: IN
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="circle-wrapper bg-primary d-flex justify-content-center align-items-center">
+                        Cases: 785256
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="circle-wrapper bg-danger d-flex justify-content-center align-items-center">
+                        Death: 785256
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="circle-wrapper bg-success d-flex justify-content-center align-items-center">
+                        Recovered: 785256
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

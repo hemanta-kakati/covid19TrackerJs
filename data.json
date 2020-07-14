@@ -1,0 +1,18 @@
+[{
+        "id": 1,
+        "name": "John Doe",
+        "city": "Guwahati"
+    },
+
+    {
+        "id": 2,
+        "name": "Suman Doe",
+        "city": "Guwahati"
+    },
+
+    {
+        "id": 3,
+        "name": "Hemanta Kakati",
+        "city": "Nagaon"
+    }
+]
