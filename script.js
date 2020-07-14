@@ -105,22 +105,22 @@ function getDataByCountry(country, e) {
                 </div>
             </form>
         <h4 class="text-center text-primary mb-4">Last Updated: ${country.last_update}</h4>
-        <div class="col-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-warning d-flex justify-content-center align-items-center">
                 Country: ${country.country}
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-primary d-flex justify-content-center align-items-center">
                 Cases: ${country.cases}
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-danger d-flex justify-content-center align-items-center">
                 Death: ${country.deaths}
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-success d-flex justify-content-center align-items-center">
                 Recovered: ${country.recovered}
             </div>
@@ -188,22 +188,22 @@ function getDataByCountryDiff(countryDataArr, e) {
                     </div>
             </div>
         <h4 class="text-center text-primary mb-4">Last Updated: ${countryDataArr.last_update} (Total Tally)</h4>
-        <div class="col-sm-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-warning d-flex justify-content-center align-items-center">
                 Country: ${countryDataArr.country}
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-primary d-flex justify-content-center align-items-center">
                 Cases: ${countryDataArr.cases}
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-danger d-flex justify-content-center align-items-center">
                 Death: ${countryDataArr.deaths}
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6 col-md-3 mb-2">
             <div class="circle-wrapper bg-success d-flex justify-content-center align-items-center">
                 Recovered: ${countryDataArr.recovered}
             </div>
